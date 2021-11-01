@@ -1,0 +1,57 @@
+:root {
+  --dark-blue: #0b0d17;
+  --light-blue: #d0d6f9;
+}
+
+body {
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+.sh1 {
+  font-family: 'Bellefair', serif;
+}
+
+h5,
+p,
+.sh2 {
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+h1 {
+  font-size: 150px;
+}
+
+h2 {
+  font-size: 100px;
+}
+
+h3 {
+  font-size: 56px;
+}
+
+h4 {
+  font-size: 32px;
+}
+
+h5 {
+  font-size: 28px;
+  letter-spacing: 4.75;
+}
+
+p {
+  font-size: 16px;
+  letter-spacing: 2.7;
+}
+
+.sh1 {
+  font-size: 28px;
+}
+
+.sh2 {
+  font-size: 14px;
+  letter-spacing: 2.35;
+}
