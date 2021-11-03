@@ -1,0 +1,7 @@
+.Layout {
+  background-size: cover;
+  margin: 0;
+  padding: 1.5rem;
+  min-height: 100vh;
+  width: 100%;
+}

@@ -1,10 +1,36 @@
-:root {
+html {
   --dark-blue: #0b0d17;
   --light-blue: #d0d6f9;
+  font-size: 16px;
+}
+
+*,
+::before,
+::after {
+  background-repeat: no-repeat;
+  box-sizing: border-box;
 }
 
 body {
-  font-size: 16px;
+  color: var(--light-blue);
+  text-align: center;
+}
+
+html,
+body {
+  width: 100vw;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+div {
+  margin: 0;
+  padding: 0;
 }
 
 h1,
@@ -13,16 +39,23 @@ h3,
 h4,
 .sh1 {
   font-family: 'Bellefair', serif;
+  font-style: normal;
+  font-weight: normal;
 }
 
 h5,
 p,
 .sh2 {
   font-family: 'Barlow Condensed', sans-serif;
+  font-style: normal;
+  font-weight: normal;
 }
 
 h1 {
-  font-size: 150px;
+  color: #fff;
+  font-size: 80px;
+  line-height: 100px;
+  text-transform: uppercase;
 }
 
 h2 {
@@ -38,13 +71,15 @@ h4 {
 }
 
 h5 {
-  font-size: 28px;
-  letter-spacing: 4.75;
+  font-size: 1rem;
+  letter-spacing: 2.7px;
+  line-height: auto;
+  text-transform: uppercase;
 }
 
 p {
-  font-size: 16px;
-  letter-spacing: 2.7;
+  font-size: 15px;
+  line-height: 25px;
 }
 
 .sh1 {

@@ -1,0 +1,15 @@
+.Home {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.Text {
+  width: 100%;
+}
+
+.Text h1 {
+  margin: 1rem 0;
+}
