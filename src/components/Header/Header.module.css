@@ -1,6 +1,9 @@
 .Header {
-  display: flex;
-  justify-content: space-evenly;
   height: 2.5rem;
   width: 100%;
+}
+
+.Header nav {
+  display: flex;
+  justify-content: space-evenly;
 }
