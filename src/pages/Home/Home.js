@@ -23,7 +23,9 @@ const Home = () => {
           experience!
         </p>
       </div>
-      <div className={styles.ExploreButton}></div>
+      <div className={styles.ExploreButton}>
+        <h4>Explore</h4>
+      </div>
     </div>
   )
 }

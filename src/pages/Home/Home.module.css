@@ -7,9 +7,31 @@
 }
 
 .Text {
+  margin-top: 3rem;
   width: 100%;
 }
 
 .Text h1 {
   margin: 1rem 0;
+}
+
+.Text p {
+  margin: 0 5px;
+}
+
+.ExploreButton {
+  align-items: center;
+  aspect-ratio: 1;
+  background-color: #fff;
+  border-radius: 50%;
+  bottom: 3rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  height: 150px;
+  position: absolute;
+}
+
+.ExploreButton * {
+  cursor: pointer;
 }
