@@ -3,3 +3,8 @@
   display: flex;
   flex-direction: column;
 }
+
+.LineBreak {
+  border-top: var(--dark-blue) 1px solid;
+  width: 100%;
+}
