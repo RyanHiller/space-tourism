@@ -18,6 +18,7 @@ body {
 
 html,
 body {
+  text-transform: uppercase;
   width: 100vw;
 }
 
@@ -55,7 +56,6 @@ h1 {
   color: #fff;
   font-size: 80px;
   line-height: 100px;
-  text-transform: uppercase;
 }
 
 h2 {
@@ -63,6 +63,7 @@ h2 {
 }
 
 h3 {
+  color: #fff;
   font-size: 56px;
 }
 
@@ -74,19 +75,22 @@ h5 {
   font-size: 1rem;
   letter-spacing: 2.7px;
   line-height: auto;
-  text-transform: uppercase;
 }
 
 p {
   font-size: 15px;
   line-height: 25px;
+  text-transform: none;
 }
 
 .sh1 {
+  color: #fff;
+  display: block;
   font-size: 28px;
 }
 
 .sh2 {
+  display: block;
   font-size: 14px;
-  letter-spacing: 2.35;
+  letter-spacing: 2.35px;
 }

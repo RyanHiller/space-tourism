@@ -5,8 +5,8 @@ import * as styles from './Crew.module.css'
 const Crew = () => {
   useEffect(() => {
     const layout = document.getElementById('layout')
-    layout.classList.add('destinationBG')
-    layout.classList.remove('crewBG')
+    layout.classList.add('crewBG')
+    layout.classList.remove('destinationBG')
     layout.classList.remove('homeBG')
     layout.classList.remove('technologyBG')
   }, [])
