@@ -11,7 +11,31 @@ const Crew = () => {
     layout.classList.remove('technologyBG')
   }, [])
 
-  return <div className={styles.Crew}></div>
+  const crewmate = {}
+
+  return (
+    <div className={styles.Crew}>
+      <h5>
+        <span>02</span>Meet your crew
+      </h5>
+      {crewmate.image}
+      <div className={styles.LineBreak} />
+      <ul>
+        <li>o</li>
+        <li>o</li>
+        <li>o</li>
+        <li>o</li>
+      </ul>
+      <div className={styles.Nameplate}>
+        <h4>{crewmate.position}COMMANDER</h4>
+        <h3>{crewmate.name}DOUGLAS HURLEY</h3>
+      </div>
+      <p>
+        {crewmate.bio}Lorem Ipsum jsldkfjlskdjflskdjflsk djlfskdj lfksd ljfks
+        ldjfsldk jflskd lskf jsdlk fjlskd flskd jflskd jlfsk djlfks djlkf jsldk
+      </p>
+    </div>
+  )
 }
 
 export default Crew

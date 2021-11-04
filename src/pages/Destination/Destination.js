@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 
-import logo from '../../assets/destination/image-moon.webp'
+import img from '../../assets/destination/image-moon.webp'
 
 import * as styles from './Destination.module.css'
 
@@ -22,7 +22,7 @@ const Destination = () => {
         <span>01</span>Pick your destination
       </h5>
       {destination.image}
-      <img src={logo} alt={destination.name} />
+      <img src={img} alt={destination.name} />
       <ul>
         <li>Moon</li>
         <li>Mars</li>
