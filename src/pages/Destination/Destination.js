@@ -18,27 +18,32 @@ const Destination = () => {
 
   return (
     <div className={styles.Destination}>
-      <h5>
+      <h5 className={styles.Title}>
         <span>01</span>Pick your destination
       </h5>
-      {destination.image}
-      <img src={img} alt={destination.name} />
-      <ul>
+      {/* <img
+        className={styles.Image}
+        src={destination.image}
+        alt={destination.name}
+      /> */}
+      <img className={styles.Image} src={img} alt={destination.name} />
+      <ul className={styles.Navigation}>
         <li>Moon</li>
         <li>Mars</li>
         <li>Europa</li>
         <li>Titan</li>
       </ul>
-      <h3>{destination.name}ABC</h3>
+      <h2>{destination.name}Moon</h2>
       <p>
-        {destination.description}Lorem Ipsum jsldkfjlskdjflskdjflsk djlfskdj
-        lfksd ljfks ldjfsldk jflskd lskf jsdlk fjlskd flskd jflskd jlfsk djlfks
-        djlkf jsldk
+        {destination.description}See our planet as you’ve never seen it before.
+        A perfect relaxing trip away to help regain perspective and come back
+        refreshed. While you’re there, take in some history by visiting the Luna
+        2 and Apollo 11 landing sites.
       </p>
       <div className={styles.LineBreak} />
       <div className={styles.Distance}>
         <span className={`sh2`}>Avg. Distance</span>
-        <span className={`sh1`}>{destination.distance}384400KM</span>
+        <span className={`sh1`}>{destination.distance}384,400 KM</span>
       </div>
       <div className={styles.Travel}>
         <span className={`sh2`}>Est. Travel Time</span>

@@ -1,6 +1,8 @@
 html {
   --dark-blue: #0b0d17;
   --light-blue: #d0d6f9;
+  --line-break: #383b4b;
+  --number-gray: #484951;
   font-size: 16px;
 }
 
@@ -65,7 +67,9 @@ h1 {
 }
 
 h2 {
-  font-size: 100px;
+  color: #fff;
+  font-size: 56px;
+  line-height: 64px;
 }
 
 h3 {
