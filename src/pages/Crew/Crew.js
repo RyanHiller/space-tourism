@@ -31,8 +31,9 @@ const Crew = () => {
         <h3>{crewmate.name}DOUGLAS HURLEY</h3>
       </div>
       <p>
-        {crewmate.bio}Lorem Ipsum jsldkfjlskdjflskdjflsk djlfskdj lfksd ljfks
-        ldjfsldk jflskd lskf jsdlk fjlskd flskd jflskd jlfsk djlfks djlkf jsldk
+        {crewmate.bio}Douglas Gerald Hurley is an American engineer, former
+        Marine Corps pilot and former NASA astronaut. He launched into space for
+        the third time as commander of Crew Dragon Demo-2.
       </p>
     </div>
   )

@@ -33,7 +33,9 @@ h3,
 h4,
 h5,
 p,
-div {
+div,
+ol,
+ul {
   margin: 0;
   padding: 0;
 }
