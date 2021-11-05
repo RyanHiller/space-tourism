@@ -24,7 +24,7 @@ const Destination = () => {
       {/* TODO: Fix these images. Figure out how to dynamically render? */}
       <img
         className={styles.Image}
-        src={require(`../../assets/destination/image-moon.webp`)}
+        src={destination.images.webp}
         alt={destination.name}
       />
       <ul className={styles.Navigation}>
