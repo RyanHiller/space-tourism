@@ -1,6 +1,6 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 
-import img from '../../assets/destination/image-moon.webp'
+import data from './destinations'
 
 import * as styles from './Destination.module.css'
 
@@ -14,40 +14,59 @@ const Destination = () => {
     layout.classList.remove('technologyBG')
   }, [])
 
-  const destination = {}
+  const [destination, setDestination] = useState(data.destinations[0])
 
   return (
     <div className={styles.Destination}>
       <h5 className={styles.Title}>
         <span>01</span>Pick your destination
       </h5>
-      {/* <img
+      {/* TODO: Fix these images. Figure out how to dynamically render? */}
+      <img
         className={styles.Image}
-        src={destination.image}
+        src={require(`../../assets/destination/image-moon.webp`)}
         alt={destination.name}
-      /> */}
-      <img className={styles.Image} src={img} alt={destination.name} />
+      />
       <ul className={styles.Navigation}>
-        <li>Moon</li>
-        <li>Mars</li>
-        <li>Europa</li>
-        <li>Titan</li>
+        <li
+          onClick={() => {
+            setDestination(data.destinations[0])
+          }}
+        >
+          Moon
+        </li>
+        <li
+          onClick={() => {
+            setDestination(data.destinations[1])
+          }}
+        >
+          Mars
+        </li>
+        <li
+          onClick={() => {
+            setDestination(data.destinations[2])
+          }}
+        >
+          Europa
+        </li>
+        <li
+          onClick={() => {
+            setDestination(data.destinations[3])
+          }}
+        >
+          Titan
+        </li>
       </ul>
-      <h2>{destination.name}Moon</h2>
-      <p>
-        {destination.description}See our planet as you’ve never seen it before.
-        A perfect relaxing trip away to help regain perspective and come back
-        refreshed. While you’re there, take in some history by visiting the Luna
-        2 and Apollo 11 landing sites.
-      </p>
+      <h2>{destination.name}</h2>
+      <p>{destination.description}</p>
       <div className={styles.LineBreak} />
       <div className={styles.Distance}>
         <span className={`sh2`}>Avg. Distance</span>
-        <span className={`sh1`}>{destination.distance}384,400 KM</span>
+        <span className={`sh1`}>{destination.distance}</span>
       </div>
       <div className={styles.Travel}>
         <span className={`sh2`}>Est. Travel Time</span>
-        <span className={`sh1`}>{destination.time}3 Days</span>
+        <span className={`sh1`}>{destination.travel}</span>
       </div>
     </div>
   )
