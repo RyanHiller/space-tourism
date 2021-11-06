@@ -1,5 +1,6 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 
+import data from './crewmates'
 import * as styles from './Crew.module.css'
 
 const Crew = () => {
@@ -11,30 +12,54 @@ const Crew = () => {
     layout.classList.remove('technologyBG')
   }, [])
 
-  const crewmate = {}
+  const [crewmate, setCrewmate] = useState(data.crew[0])
 
   return (
     <div className={styles.Crew}>
-      <h5>
+      <h5 className={styles.Title}>
         <span>02</span>Meet your crew
       </h5>
-      {crewmate.image}
-      <div className={styles.LineBreak} />
-      <ul>
-        <li>o</li>
-        <li>o</li>
-        <li>o</li>
-        <li>o</li>
+      <img
+        className={styles.Image}
+        src={crewmate.images.webp}
+        alt={crewmate.name}
+      />
+      <div className={`${styles.LineBreak} lineBreak`} />
+      <ul className={styles.Navigation}>
+        <li
+          onClick={() => {
+            setCrewmate(data.crew[0])
+          }}
+        >
+          <div></div>
+        </li>
+        <li
+          onClick={() => {
+            setCrewmate(data.crew[1])
+          }}
+        >
+          <div></div>
+        </li>
+        <li
+          onClick={() => {
+            setCrewmate(data.crew[2])
+          }}
+        >
+          <div></div>
+        </li>
+        <li
+          onClick={() => {
+            setCrewmate(data.crew[3])
+          }}
+        >
+          <div></div>
+        </li>
       </ul>
       <div className={styles.Nameplate}>
-        <h4>{crewmate.position}COMMANDER</h4>
-        <h3>{crewmate.name}DOUGLAS HURLEY</h3>
+        <h4 className={styles.Role}>{crewmate.role}</h4>
+        <h3 className={styles.Name}>{crewmate.name}</h3>
       </div>
-      <p>
-        {crewmate.bio}Douglas Gerald Hurley is an American engineer, former
-        Marine Corps pilot and former NASA astronaut. He launched into space for
-        the third time as commander of Crew Dragon Demo-2.
-      </p>
+      <p className={styles.Bio}>{crewmate.bio}</p>
     </div>
   )
 }

@@ -3,3 +3,32 @@
   display: flex;
   flex-direction: column;
 }
+
+.Image {
+  width: 55%;
+}
+
+.Navigation {
+  margin: 2rem 0;
+}
+
+.Navigation li {
+  margin-right: 1rem;
+}
+
+.Navigation li div {
+  aspect-ratio: 1;
+  background-color: #979797;
+  border-radius: 50%;
+  height: 10px;
+}
+
+.Role {
+  color: #909296;
+  font-size: 1rem;
+}
+
+.Name {
+  color: #fff;
+  margin: 0.5rem 0 1rem 0;
+}
