@@ -3,6 +3,7 @@ import React from 'react'
 import Header from '../Header/Header'
 
 import './backgroundStyles.css'
+import './pageStyles.css'
 import * as styles from './Layout.module.css'
 
 const Layout = ({ children }) => (

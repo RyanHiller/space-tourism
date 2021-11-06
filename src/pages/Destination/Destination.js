@@ -17,10 +17,9 @@ const Destination = () => {
 
   return (
     <div className={styles.Destination}>
-      <h5 className={styles.Title}>
+      <h5 className={`${styles.Title} pageTitle`}>
         <span>01</span>Pick your destination
       </h5>
-      {/* TODO: Fix these images. Figure out how to dynamically render? */}
       <img
         className={styles.Image}
         src={destination.images.webp}
@@ -56,9 +55,9 @@ const Destination = () => {
           Titan
         </li>
       </ul>
-      <h2>{destination.name}</h2>
-      <p>{destination.description}</p>
-      <div className={styles.LineBreak} />
+      <h2 className={styles.Name}>{destination.name}</h2>
+      <p className={styles.Destination}>{destination.description}</p>
+      <div className={`${styles.LineBreak} lineBreak`} />
       <div className={styles.Distance}>
         <span className={`sh2`}>Avg. Distance</span>
         <span className={`sh1`}>{destination.distance}</span>

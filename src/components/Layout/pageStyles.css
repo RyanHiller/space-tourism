@@ -1,0 +1,58 @@
+/* Text Styles */
+p {
+  font-size: 15px;
+  line-height: 25px;
+  margin: 0 5px;
+  text-transform: none;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 1rem;
+  letter-spacing: 2.7px;
+  line-height: auto;
+  margin: 1.5rem 0 2rem 0;
+}
+
+h5 span {
+  color: var(--number-gray);
+  font-weight: 700;
+  margin-right: 1.1rem;
+}
+
+.sh1 {
+  color: #fff;
+  display: block;
+  font-size: 28px;
+}
+
+.sh2 {
+  display: block;
+  font-size: 14px;
+  letter-spacing: 2.35px;
+}
+/* End Text Styles */
+
+/* Other Styles */
+ul {
+  list-style: none;
+}
+
+ul li,
+ul li div {
+  cursor: pointer;
+  display: inline-block;
+}
+
+ul li:last-child {
+  margin-right: 0 !important;
+}
+
+.lineBreak {
+  border-top: var(--line-break) 2px solid;
+  width: 100%;
+}
+/* End Other Styles */

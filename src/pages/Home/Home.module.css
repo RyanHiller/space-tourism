@@ -6,17 +6,15 @@
   width: 100%;
 }
 
-.Text {
-  margin-top: 3rem;
-  width: 100%;
+.Text h5 {
+  margin: 3rem 0 0 0;
 }
 
 .Text h1 {
+  color: #fff;
+  font-size: 80px;
+  line-height: 100px;
   margin: 1rem 0;
-}
-
-.Text p {
-  margin: 0 5px;
 }
 
 .ExploreButton {
@@ -32,6 +30,9 @@
   position: absolute;
 }
 
-.ExploreButton * {
+.ExploreButton h4 {
+  color: var(--dark-blue);
   cursor: pointer;
+  font-size: 20px;
+  letter-spacing: 1.25px;
 }
