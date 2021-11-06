@@ -1,5 +1,6 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 
+import data from './technologies'
 import * as styles from './Technology.module.css'
 
 const Technology = () => {
@@ -11,28 +12,52 @@ const Technology = () => {
     layout.classList.remove('destinationBG')
   }, [])
 
-  const technology = {}
+  const [technology, setTechnology] = useState(data.technology[0])
 
   return (
     <div className={styles.Technology}>
       <h5>
         <span>03</span>Space launch 101
       </h5>
-      {technology.image}
-      <ol className={styles.Navigation}>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-      </ol>
-      <span className={`sh2`}>The terminology...</span>
-      <h3 className={styles.Name}>{technology.name}Launch Vehicle</h3>
-      <p className={styles.Description}>
-        {technology.description}A launch vehicle or carrier rocket is a
-        rocket-propelled vehicle used to carry a payload from Earth's surface to
-        space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the
-        most powerful in operation. Standing 150 metres tall, it's quite an
-        awe-inspiring sight on the launch pad!
-      </p>
+      <img
+        className={styles.Image}
+        src={technology.images.landscape}
+        alt={technology.name}
+      />
+      <ul className={styles.Navigation}>
+        <li>
+          <div
+            onClick={() => {
+              setTechnology(data.technology[0])
+            }}
+          >
+            1
+          </div>
+        </li>
+        <li>
+          <div
+            onClick={() => {
+              setTechnology(data.technology[1])
+            }}
+          >
+            2
+          </div>
+        </li>
+        <li>
+          <div
+            onClick={() => {
+              setTechnology(data.technology[2])
+            }}
+          >
+            3
+          </div>
+        </li>
+      </ul>
+      <div className={styles.Text}>
+        <span className={`sh2`}>The terminology...</span>
+        <h3 className={styles.Name}>{technology.name}</h3>
+        <p className={styles.Description}>{technology.description}</p>
+      </div>
     </div>
   )
 }

@@ -26,33 +26,33 @@ const Crew = () => {
       />
       <div className={`${styles.LineBreak} lineBreak`} />
       <ul className={styles.Navigation}>
-        <li
-          onClick={() => {
-            setCrewmate(data.crew[0])
-          }}
-        >
-          <div></div>
+        <li>
+          <div
+            onClick={() => {
+              setCrewmate(data.crew[0])
+            }}
+          ></div>
         </li>
-        <li
-          onClick={() => {
-            setCrewmate(data.crew[1])
-          }}
-        >
-          <div></div>
+        <li>
+          <div
+            onClick={() => {
+              setCrewmate(data.crew[1])
+            }}
+          ></div>
         </li>
-        <li
-          onClick={() => {
-            setCrewmate(data.crew[2])
-          }}
-        >
-          <div></div>
+        <li>
+          <div
+            onClick={() => {
+              setCrewmate(data.crew[2])
+            }}
+          ></div>
         </li>
-        <li
-          onClick={() => {
-            setCrewmate(data.crew[3])
-          }}
-        >
-          <div></div>
+        <li>
+          <div
+            onClick={() => {
+              setCrewmate(data.crew[3])
+            }}
+          ></div>
         </li>
       </ul>
       <div className={styles.Nameplate}>
