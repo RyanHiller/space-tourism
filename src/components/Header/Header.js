@@ -5,7 +5,8 @@ import * as styles from './Header.module.css'
 
 const Header = () => (
   <div className={styles.Header}>
-    <nav>
+    <div className={styles.Logo}></div>
+    <nav className={styles.Navigation}>
       <Link to='/'>Home</Link>
       <Link to='/destination'>Destination</Link>
       <Link to='/crew'>Crew</Link>

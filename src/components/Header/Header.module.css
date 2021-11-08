@@ -6,11 +6,17 @@
   width: 100%;
 }
 
-.Header nav {
+.Navigation {
   display: flex;
   justify-content: space-evenly;
 }
 
-.Header nav a {
+.Navigation a {
   margin: 0 0.25rem;
+}
+
+@media (min-width: 768px) {
+  .Header {
+    height: 6rem;
+  }
 }
