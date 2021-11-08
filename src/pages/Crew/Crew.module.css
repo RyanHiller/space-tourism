@@ -5,7 +5,7 @@
 }
 
 .Image {
-  width: 55%;
+  max-height: 14rem;
 }
 
 .Navigation {
