@@ -18,21 +18,30 @@
 }
 
 .ExploreButton {
-  align-items: center;
   aspect-ratio: 1;
   background-color: #fff;
   border-radius: 50%;
   bottom: 3rem;
   cursor: pointer;
-  display: flex;
-  justify-content: center;
   height: 150px;
   position: absolute;
 }
 
+.ExploreButton * {
+  cursor: pointer;
+}
+
+.ExploreButton a {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  text-decoration: none;
+  width: 100%;
+}
+
 .ExploreButton h4 {
   color: var(--dark-blue);
-  cursor: pointer;
   font-size: 20px;
   letter-spacing: 1.25px;
 }

@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import { Link } from 'react-router-dom'
 
 import * as styles from './Home.module.css'
 
@@ -24,7 +25,9 @@ const Home = () => {
         </p>
       </div>
       <div className={styles.ExploreButton}>
-        <h4>Explore</h4>
+        <Link to='/destination'>
+          <h4>Explore</h4>
+        </Link>
       </div>
     </div>
   )
