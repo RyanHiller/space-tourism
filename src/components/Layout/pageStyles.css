@@ -1,14 +1,14 @@
 /* Text Styles */
 p {
-  font-size: 15px;
-  line-height: 25px;
+  font-size: 0.95rem;
+  line-height: 1.55rem;
   margin: 0 5px;
   text-transform: none;
 }
 
 h3 {
   color: #fff;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 h5 {
@@ -27,17 +27,21 @@ h5 span {
 .sh1 {
   color: #fff;
   display: block;
-  font-size: 28px;
+  font-size: 1.75rem;
 }
 
 .sh2 {
   display: block;
-  font-size: 14px;
+  font-size: 0.875rem;
   letter-spacing: 2.35px;
 }
 /* End Text Styles */
 
 /* Other Styles */
+main {
+  padding: 0 1.5rem;
+}
+
 ul {
   list-style: none;
 }
@@ -53,9 +57,34 @@ ul li div {
 ul li:last-child {
   margin-right: 0 !important;
 }
-
-.lineBreak {
-  border-top: var(--line-break) 2px solid;
-  width: 100%;
-}
 /* End Other Styles */
+
+/* Responsive Styling */
+/*** Tablet Styles ***/
+@media (min-width: 768px) {
+  p {
+    font-size: 1rem;
+    line-height: 1.75rem;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+    line-height: 2.8rem;
+  }
+
+  h5 {
+    align-self: flex-start;
+    font-size: 1.25rem;
+    letter-spacing: 3.3px;
+    margin-bottom: 3.75rem;
+    margin-left: 2.5rem;
+  }
+
+  main {
+    padding: 0;
+  }
+}
+
+/*** Desktop Styles ***/
+@media (min-width: 1200px) {
+}

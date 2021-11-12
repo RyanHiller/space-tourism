@@ -1,4 +1,6 @@
 .Technology {
+  display: flex;
+  flex-direction: column;
   width: 100%;
 }
 
@@ -25,4 +27,26 @@
 
 .Name {
   margin: 0.5rem 0 1rem 0;
+}
+
+@media (min-width: 768px) {
+  .Image {
+    margin: 0;
+  }
+
+  .Navigation {
+    margin: 3.55rem 0 2.8rem 0;
+  }
+
+  .Navigation li div {
+    height: 58px;
+  }
+
+  .Name {
+    margin: 1rem 0;
+  }
+
+  .Description {
+    margin: 0 9.7rem;
+  }
 }

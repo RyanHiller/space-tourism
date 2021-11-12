@@ -32,3 +32,25 @@
   color: #fff;
   margin: 0.5rem 0 1rem 0;
 }
+
+@media (min-width: 768px) {
+  .Image {
+    bottom: 0;
+    max-height: 33.25rem;
+    order: 10;
+    position: absolute;
+  }
+
+  .Navigation {
+    order: 9;
+  }
+
+  .Nameplate,
+  .Bio {
+    padding: 0 9.7rem;
+  }
+
+  .Role {
+    font-size: 1.5rem;
+  }
+}

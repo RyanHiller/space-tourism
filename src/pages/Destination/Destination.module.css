@@ -17,27 +17,67 @@
   font-family: 'Barlow Condensed', sans-serif;
   font-style: normal;
   font-weight: normal;
-}
-
-.Navigation li {
   margin-right: 1.6rem;
 }
 
 .Name {
   color: #fff;
-  font-size: 56px;
-  line-height: 64px;
+  font-size: 3.5rem;
+  line-height: 4rem;
 }
 
-.LineBreak {
+.Info {
+  border-top: var(--line-break) 2px solid;
+  display: flex;
+  flex-direction: column;
   margin: 2rem 0;
+  width: 100%;
 }
 
 .Distance {
-  margin-bottom: 2rem;
+  margin: 2rem 0;
 }
 
 .Distance span:first-child,
 .Travel span:first-child {
   margin-bottom: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .Title {
+    margin-left: 2.5rem;
+  }
+
+  .Image {
+    width: 39%;
+  }
+
+  .Navigation {
+    margin: 3.5rem 0 2rem 0;
+  }
+
+  .Navigation li {
+    margin-right: 2rem;
+  }
+
+  .Name {
+    font-size: 5rem;
+    line-height: 5.75rem;
+  }
+
+  .Description {
+    margin-top: 0.5rem;
+    width: 75%;
+  }
+
+  .Info {
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 1.75rem;
+    width: 75%;
+  }
+
+  .Distance {
+    margin: 0;
+  }
 }

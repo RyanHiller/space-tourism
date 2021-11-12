@@ -56,15 +56,16 @@ const Destination = () => {
         </li>
       </ul>
       <h2 className={styles.Name}>{destination.name}</h2>
-      <p className={styles.Destination}>{destination.description}</p>
-      <div className={`${styles.LineBreak} lineBreak`} />
-      <div className={styles.Distance}>
-        <span className={`sh2`}>Avg. Distance</span>
-        <span className={`sh1`}>{destination.distance}</span>
-      </div>
-      <div className={styles.Travel}>
-        <span className={`sh2`}>Est. Travel Time</span>
-        <span className={`sh1`}>{destination.travel}</span>
+      <p className={styles.Description}>{destination.description}</p>
+      <div className={styles.Info}>
+        <div className={styles.Distance}>
+          <span className={`sh2`}>Avg. Distance</span>
+          <span className={`sh1`}>{destination.distance}</span>
+        </div>
+        <div className={styles.Travel}>
+          <span className={`sh2`}>Est. Travel Time</span>
+          <span className={`sh1`}>{destination.travel}</span>
+        </div>
       </div>
     </div>
   )
